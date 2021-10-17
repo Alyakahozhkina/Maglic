@@ -11,7 +11,7 @@
     $mail->IsHTML(true);
 
     //От кого письмо
-    $mail->setForm('google.com', 'MaglicSite');
+    $mail->setFrom('info@gmail.com', 'MaglicSite');
     //Кому отправить
     $mail->addAddress('alya.finko@gmail.com');
     //Тема письма
