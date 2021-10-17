@@ -1,0 +1,59 @@
+// main: main.less
+
+
+.quote {
+
+    background: #323232;
+    padding: 25px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__box-text {
+        width: 70%;
+        margin: 0 15px 0 0;
+    }
+
+    // .quote__text
+
+    &__text {
+        font-family: 'open_sanslight';
+        .adaptiv-font(24, 20);
+        color: #fff;
+        margin: 0;
+        span {
+            color: @yellowColor;
+        }
+    }
+
+    // .quote__box-button
+
+    &__box-button {
+        width: 30%;
+    }
+
+    // .quote__button
+
+    &__button {
+        display: block;
+        font-family: 'montserratbold';
+        font-size: 12px;
+        border: 1px solid #fff;
+        padding: 16px 0 14px;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        .adaptiv-max-width(170, 160);
+        text-align: center;
+        margin: 0 0 0 auto;
+        transition: color 0.5s, border 0.5s;
+        &:hover {
+            color: @yellowColor;
+            border: 1px solid @yellowColor;
+        }
+    }
+}

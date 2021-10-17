@@ -1,0 +1,59 @@
+// main: main.less
+
+
+
+.achievements {
+    
+    &__parallax {
+        background-image: url("../img/fon.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 88px 0 87px;
+    }
+
+    ._opacity {
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+    ._opacity.show {
+        opacity: 1;
+    }
+    // .achievements__inner
+    &__inner {
+        text-align: center;
+        color: @white;
+    }
+
+    // .achievements__number
+
+    &__number {
+        font-family: 'montserratregular';
+        .adaptiv-font(48, 40);
+        letter-spacing: 3px;
+    }
+
+    // .achievements__text
+
+    &__text {
+        font-family: 'montserratbold';
+        .adaptiv-font(18, 16);
+        letter-spacing: 1.4px;
+        margin-bottom: 0px;
+        padding-bottom: 31px;
+    }
+    .row > div {
+        position: relative;
+    }
+    .row > div::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 3px;
+        width: 17%;
+        background: #ffffff;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}

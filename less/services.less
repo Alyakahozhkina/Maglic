@@ -1,0 +1,111 @@
+// main: main.less
+
+.for__page .services {
+    .container {
+        max-width: 770px;
+    }
+}
+
+
+.services {
+    &__parallax {
+        background: url(../img/fon1.png) no-repeat;
+        background-position: top center;
+        padding: 58px 0px 319px;
+    }
+
+    
+    .row > div:nth-child(3) .services__item {
+        justify-content: flex-end;
+    }
+    .row > div:nth-child(4) .services__item {
+        justify-content: center;
+    }
+
+    &__title {
+        font-family: 'montserratbold';
+        .adaptiv-font(30, 22);
+        .adaptiv-line-height(60, 38);
+        color: @blackColor;
+        letter-spacing: 2.3px;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+    }
+
+    // .services__text
+
+    &__text {
+        font-family: 'open_sanslight';
+        .adaptiv-font(16, 14);
+        .adaptiv-line-height(30, 25);
+        max-width: 670px;
+        width: 100%;
+        color: @greyColor;
+        margin-bottom: 41px;
+    }
+
+    // .services__item
+
+    &__item {
+        display: flex;
+        align-items: center;
+        max-width: 230px;
+        width: 100%;
+    }
+
+    // .services__icon
+
+    &__icon {
+        font-size: 25px;
+        border-radius: 50%;
+        background: @white;
+        height: 69px;
+        width: 69px;
+        border: 2px solid #d8d8d8;
+        padding: 20px;
+        position: relative;
+        margin-right: 30px;
+        i {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    // .services__name
+
+    &__name {
+        font-family: 'montserratregular';
+        font-size: 14px;
+        color: @blackColor;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+
+    // .services__button
+
+    &__button {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'montserratregular';
+        .adaptiv-font(18, 16);
+        .adaptiv-max-width(217, 180);
+        font-size: 18px;
+        max-width: 217px;
+        width: 100%;
+        border: 1px solid white;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 0px 11px;
+        margin-top: 85px;
+        transition: color 0.5s, border 0.5s;
+        &:hover {
+            color: @yellowColor;
+            border: 1px solid @yellowColor;
+        }
+    }
+}
+

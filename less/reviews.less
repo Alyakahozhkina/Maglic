@@ -1,0 +1,197 @@
+// main: main.less
+
+.reviews {
+    &__parallax {
+        background-image: url("../img/fon3.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 102px 0 123px;
+    }
+    .casual-title {
+
+        // .casual-title__main
+        &__main {
+            font-family: 'montserratbold';
+            color: @white;
+            letter-spacing: 3px;
+            margin: 0 0 20px 0;
+        }
+    
+        // .casual-title__separator
+        &__separator {
+            background-image: url(../img/separator1.png);
+            background-repeat: no-repeat;
+            &::before, &::after {
+                background: rgba(255, 255, 255, 0.425);
+            }
+        }
+    
+        // .casual-title__subtitle
+        &__subtitle {
+            font-family: 'open_sanslight';
+            color: @white;
+        }
+    }
+
+
+    // .reviews__slider
+    &__slider {
+        max-width: 520px;
+        width: 100%;
+        margin: 49px 0 41px;
+    }
+
+
+    // .reviews__slide
+    &__slide {
+        cursor: pointer;
+        transition: opacity 1s;
+        opacity: 1;
+    }
+
+    // .reviews__content
+    &__content {
+        width: 143px;
+        height: 143px;
+        border-radius: 50%;
+        margin: 0px auto;
+    }
+    // .reviews__img
+    &__img {
+        position: relative;
+        z-index: -1;
+        width: 143px;
+        height: 143px;
+        border-radius: 50%;
+        opacity: 0.5;
+        transition: opacity 1s;
+    }
+
+    .swiper-slide-active {
+        img {
+            opacity: 1; 
+        }
+        .reviews__content {
+            box-shadow: inset 0 0 0px 6px @yellowColor;
+            transition: box-shadow 1s;
+        }
+    }
+
+    .swiper-slide-duplicate-next,
+    .swiper-slide-duplicate-prev {
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    &__comments {
+        position: relative; 
+        max-width: 760px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    // .reviews__block-hidden
+    &__block-hidden {
+        .hidden {
+            animation:  fadeIn 1s;
+            display: none;
+        }
+        .reviews__separator {
+            display: none;
+        }
+        &.active {
+            .hidden {
+                display: block;
+            }
+            .reviews__separator {
+                 display: block;
+            }
+        }
+    }
+
+
+    // .reviews__text
+    &__text {
+        font-family: 'open_sanslight_italic';
+        font-size: 18px;
+        line-height: 29px;
+        color: @lightColor;
+        text-align: center;
+
+        max-height: 57px;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    // .reviews__separator
+
+    &__separator {
+        position: relative;
+        background: url(../img/separator2.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: auto;
+        height: 25px;
+        width: 31px;
+        margin: 39px auto 22px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 7px;
+            left: -137px;
+            height: 1px;
+            width: 118px;
+            background: #fefefe;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 7px;
+            right: -137px;
+            height: 1px;
+            width: 118px;
+            background: #fefefe;
+        }
+    }
+
+    // .reviews__name
+
+    &__name {
+        font-family: 'montserratregular';
+        font-size: 14px;
+        color: @white;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        margin: 0 0 12px;
+    }
+
+    // .reviews__profession
+
+    &__profession {
+        font-family: 'open_sanslight';
+        font-size: 12px;
+        color: @white;
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+    }
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background: #d8d8d8;
+            opacity: 1;
+            transform: scale(1);
+        }
+        .swiper-pagination-bullet-active {
+            background: @yellowColor;
+        }
+    }
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: -35px;
+    }
+}
+
+

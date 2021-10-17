@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maglic</title>
+    <link rel="shortcut icon" href="img/faviconLogo.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+    <link rel="stylesheet" type="text/css" href="./vendore/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./vendore/bootstrap-5.1.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./vendore/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./vendore/fancy-box/dist/fancybox.css">
+    <link rel="stylesheet" type="text/css" href="./vendore/swiper/swiper-bundle.min.css">
+
+    <!-- <script type="text/javascript" src="./js/jquery.min.js"></script> -->
+    <!-- <script type="text/javascript" src="./vendore/OwlCarousel/owl.carousel.min.js"></script> -->
+    <script type="text/javascript" src="./vendore/fancy-box/dist/fancybox.umd.js"></script>
+    <script type="text/javascript" src="./vendore/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./vendore/swiper/swiper-bundle.min.js"></script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+
+</head>
+<body>
+    <div class="for__page">
+        <div class="page">
+            <section class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3">
+                            <div class="header__logo">
+                                <a href="#"><img src="./img/logo.png" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-9">    
+                            <div class="header__menu menu">
+                                <div class="menu__burger">
+                                    <svg>
+                                        <defs>
+                                          <filter id="gooeyness">
+                                            <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
+                                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
+                                            <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+                                          </filter>
+                                        </defs>
+                                    </svg>
+                                    <div class="burger-svg menu__burger-svg">
+                                        <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                                          <path class="line line1" d="M 50,65 H 70 C 70,65 75,65.198488 75,70.762712 C 75,73.779026 74.368822,78.389831 66.525424,78.389831 C 22.092231,78.389831 -18.644068,-30.508475 -18.644068,-30.508475" />
+                                          <path class="line line2" d="M 50,35 H 70 C 70,35 81.355932,35.300135 81.355932,25.635593 C 81.355932,20.906215 78.841706,14.830508 72.881356,14.830508 C 35.648232,14.830508 -30.508475,84.322034 -30.508475,84.322034" />
+                                          <path class="line line3" d="M 50,50 H 30 C 30,50 12.288136,47.749959 12.288136,60.169492 C 12.288136,67.738339 16.712974,73.305085 40.677966,73.305085 C 73.791674,73.305085 108.47458,-19.915254 108.47458,-19.915254" />
+                                          <path class="line line4" d="M 50,50 H 70 C 70,50 81.779661,50.277128 81.779661,36.607372 C 81.779661,28.952694 77.941689,25 69.067797,25 C 39.95532,25 -16.949153,119.91525 -16.949153,119.91525" />
+                                          <path class="line line5" d="M 50,65 H 30 C 30,65 17.79661,64.618439 17.79661,74.152543 C 17.79661,80.667556 25.093813,81.355932 38.559322,81.355932 C 89.504001,81.355932 135.59322,-21.186441 135.59322,-21.186441" />
+                                          <path class="line line6" d="M 50,35 H 30 C 30,35 16.525424,35.528154 16.525424,24.152542 C 16.525424,17.535987 22.597755,13.559322 39.40678,13.559322 C 80.617882,13.559322 94.067797,111.01695 94.067797,111.01695" />
+                                        </svg>
+                                        <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                                          <path class="line" d="M 34,32 L 66,68" />
+                                          <path class="line" d="M 66,32 L 34,68" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <nav class="menu__body">
+                                    <ul class="menu__list">
+                                        <li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
+                                        <li class="menu__item"><a href="#services" class="menu__link">Services</a></li>
+                                        <li class="menu__item"><a href="#work" class="menu__link">Work</a></li>
+                                        <li class="menu__item"><a href="#aboutUs" class="menu__link">About us</a></li>
+                                        <li class="menu__item"><a href="#team" class="menu__link">Team</a></li>
+                                        <li class="menu__item"><a href="#blog" class="menu__link">Blog</a></li>
+                                        <li class="menu__item"><a href="#pricing" class="menu__link">Pricing</a></li>
+                                        <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-slider" id="home">
+                <div class="main-slider__swiper swiper">
+                    <div class="main-slider__wrapper swiper-wrapper">
+                        <div class="main-slider__slide slide1 swiper-slide">
+                            <div class="main-slider__fon-img" style="background:  url(./img/main-baner.png) no-repeat 50% 50% / cover;">
+                                <div class="main-slider__content">
+                                    <h1 class="main-slider__title">We deliver excellence</h1>
+                                    <p class="main-slider__subtitle">Suspendisse potenti. Integer odio erat, euismod vel dictum nec, mattis ac erat</p>
+                                    <a href="#contact-form" class="main-slider__button">Sign now</a>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="main-slider__slide slide2 swiper-slide">
+                            <div class="main-slider__fon-img" style="background:  url(./img/fon-slide.png) no-repeat 50% 50% / cover;">
+                                <div class="main-slider__content">
+                                    <p class="main-slider__title">We deliver reliability</p>
+                                    <p class="main-slider__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, beatae dolorum. Omnis vel similique quis incidunt pariatur! Cum modi nobis ipsam autem porro sunt, aperiam suscipit placeat ducimus quis? Cum.</p>
+                                    <a href="#contact-form" class="main-slider__button">Sign now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-slider__slide slide3 swiper-slide">
+                            <div class="main-slider__fon-img" style="background:  url(./img/fon-slide2.png) no-repeat 50% 50% / cover;">
+                                <div class="main-slider__content">
+                                    <p class="main-slider__title">We deliver excellence</p>
+                                    <p class="main-slider__subtitle">Suspendisse potenti. Integer odio erat, euismod vel dictum nec, mattis ac erat</p>
+                                    <a href="#contact-form" class="main-slider__button">Sign now</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="main-slider__slide slide4 swiper-slide">
+                            <div class="main-slider__fon-img" style="background:  url(./img/fon-slide3.png) no-repeat 50% 50% / cover;">
+                                <div class="main-slider__content">
+                                    <p class="main-slider__title">We deliver reliability</p>
+                                    <p class="main-slider__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, beatae dolorum. Omnis vel similique quis incidunt pariatur! Cum modi nobis ipsam autem porro sunt, aperiam suscipit placeat ducimus quis? Cum.</p>
+                                    <a href="#contact-form" class="main-slider__button">Sign now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+                  
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+            </section>
+
+            <section class="services" id="services">
+                <div class="services__parallax" data-speed="3" data-view="0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <h3 class="services__title">Awesome multi-concept studio</h3>
+                                <p class="services__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. </p>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                <div class="services__item">
+                                    <div class="services__icon"><i class="far fa-gem"></i></div>
+                                    <div class="services__name">Unique design</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                <div class="services__item">
+                                    <div class="services__icon"><i class="fas fa-camera-retro"></i></div>
+                                    <div class="services__name">Photography</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                <div class="services__item">
+                                    <div class="services__icon"><i class="fas fa-magic"></i></div>
+                                    <div class="services__name">Concept art</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <a href="#contact-form" class="services__button">More services</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <div class="works" id="work">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="works__casual-title-box casual-title">
+                                <h2 class="casual-title__main">OUR WORKS</h2>
+                                <div class="casual-title__separator"></div>
+                                <div class="casual-title__subtitle">Show Amazing Your Works</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="works__tabs tabs">
+                                <nav class="tabs__nav">
+                                    <ul class="tabs__list">
+                                        <li class="tabs__item">
+                                            <a href="#gallery1" class="tabs__link">Branding design</a>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <a href="#gallery2" class="tabs__link">Photography</a>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <a href="#gallery3" class="tabs__link">Web design</a>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <a href="#gallery4" class="tabs__link">Photo design</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tabs__content">
+                    <div class="tabs__gallery gallery1" id='gallery1'>
+                        <a
+                        href="./img/photo1.png"
+                        data-fancybox="gallery">
+                            <img src="./img/photoMin1.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo2.png"
+                        data-fancybox="gallery">
+                            <img src="./img/photoMin2.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo3.png"
+                        data-fancybox="gallery">
+                            <img src="./img/photoMin3.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo4.png"
+                        data-fancybox="gallery">
+                            <img src="./img/photoMin4.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo5.png"
+                        data-fancybox="gallery">
+                            <img src="./img/photoMin5.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo6.png"
+                        data-fancybox="gallery">
+                            <img src="./img/photoMin6.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo7.png"
+                        data-fancybox="gallery">
+                            <img src="./img/photoMin7.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo8.png"
+                        data-fancybox="gallery">
+                            <img src="./img/photoMin8.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tabs__gallery gallery2" id='gallery2'>
+                        <a
+                        href="./img/photo5.png"
+                        data-fancybox="gallery2">
+                            <img src="./img/photoMin5.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo6.png"
+                        data-fancybox="gallery2">
+                            <img src="./img/photoMin6.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo7.png"
+                        data-fancybox="gallery2">
+                            <img src="./img/photoMin7.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo8.png"
+                        data-fancybox="gallery2">
+                            <img src="./img/photoMin8.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo1.png"
+                        data-fancybox="gallery2">
+                            <img src="./img/photoMin1.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo2.png"
+                        data-fancybox="gallery2">
+                            <img src="./img/photoMin2.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo3.png"
+                        data-fancybox="gallery2">
+                            <img src="./img/photoMin3.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo4.png"
+                        data-fancybox="gallery2">
+                            <img src="./img/photoMin4.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tabs__gallery gallery3" id='gallery3'>
+                        <a
+                        href="./img/photo8.png"
+                        data-fancybox="gallery3">
+                            <img src="./img/photoMin8.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo7.png"
+                        data-fancybox="gallery3">
+                            <img src="./img/photoMin7.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo6.png"
+                        data-fancybox="gallery3">
+                            <img src="./img/photoMin6.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo5.png"
+                        data-fancybox="gallery3">
+                            <img src="./img/photoMin5.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo4.png"
+                        data-fancybox="gallery3">
+                            <img src="./img/photoMin4.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo3.png"
+                        data-fancybox="gallery3">
+                            <img src="./img/photoMin3.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo2.png"
+                        data-fancybox="gallery3">
+                            <img src="./img/photoMin2.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo1.png"
+                        data-fancybox="gallery3">
+                            <img src="./img/photoMin1.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tabs__gallery gallery4" id='gallery4'>
+                        <a
+                        href="./img/photo7.png"
+                        data-fancybox="gallery4">
+                            <img src="./img/photoMin7.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo5.png"
+                        data-fancybox="gallery4">
+                            <img src="./img/photoMin5.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo3.png"
+                        data-fancybox="gallery4">
+                            <img src="./img/photoMin3.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo1.png"
+                        data-fancybox="gallery4">
+                            <img src="./img/photoMin1.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo2.png"
+                        data-fancybox="gallery4">
+                            <img src="./img/photoMin2.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo4.png"
+                        data-fancybox="gallery4">
+                            <img src="./img/photoMin4.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo6.png"
+                        data-fancybox="gallery4">
+                            <img src="./img/photoMin6.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                        <a
+                        href="./img/photo8.png"
+                        data-fancybox="gallery4">
+                            <img src="./img/photoMin8.png" alt="photo1">
+                            <div class="tabs__text-hidden">
+                                <p class="tabs__icon"><i class="fas fa-search"></i></p>
+                                <p class="tabs__description">Crossfit : 15.4 Open Workout</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="aboutUs-description" id="aboutUs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="aboutUs-description__casual-title-box casual-title">
+                                <h2 class="casual-title__main">WHY CHOOSE US</h2>
+                                <div class="casual-title__separator"></div>
+                                <div class="casual-title__subtitle">Our Mission We build Amazing Website</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12">
+                            <div class="aboutUs-description__text-box">
+                                <h3 class="aboutUs-description__title">ULTRA SERVICES & BESt SUPPORT</h3>
+                                <p class="aboutUs-description__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                                <p class="aboutUs-description__signature">JOHN DOE - CEO/FOUNDER</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12">
+                            <div class="aboutUs-description__img">
+                                <img src="./img/phone.png" alt="phone">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="aboutUs-features">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="aboutUs-features__box">
+                                <div class="aboutUs-features__icon">
+                                    <i class="far fa-paper-plane"></i>
+                                </div>
+                                <div class="aboutUs-features__text-box">
+                                    <p class="aboutUs-features__title">Trending</p>
+                                    <p class="aboutUs-features__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="aboutUs-features__box">
+                                <div class="aboutUs-features__icon">
+                                    <i class="fab fa-tencent-weibo"></i>
+                                </div>
+                                <div class="aboutUs-features__text-box">
+                                    <p class="aboutUs-features__title">Smart setting</p>
+                                    <p class="aboutUs-features__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="aboutUs-features__box">
+                                <div class="aboutUs-features__icon">
+                                    <i class="fas fa-sliders-h"></i>
+                                </div>
+                                <div class="aboutUs-features__text-box">
+                                    <p class="aboutUs-features__title">Powerful admin</p>
+                                    <p class="aboutUs-features__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="aboutUs-features__box">
+                                <div class="aboutUs-features__icon">
+                                    <i class="far fa-moon"></i>
+                                </div>
+                                <div class="aboutUs-features__text-box">
+                                    <p class="aboutUs-features__title">Slepping mode</p>
+                                    <p class="aboutUs-features__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="aboutUs-features__box">
+                                <div class="aboutUs-features__icon">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="aboutUs-features__text-box">
+                                    <p class="aboutUs-features__title">User friendly</p>
+                                    <p class="aboutUs-features__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="aboutUs-features__box">
+                                <div class="aboutUs-features__icon">
+                                    <i class="far fa-hdd"></i>
+                                </div>
+                                <div class="aboutUs-features__text-box">
+                                    <p class="aboutUs-features__title">Auto backup</p>
+                                    <p class="aboutUs-features__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="achievements">
+                <div class="achievements__parallax parallax" data-speed="1.5" data-view="150">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 _opacity">
+                                <div class="achievements__inner">
+                                    <p class="achievements__number numbers" data-max="35" data-speed="40" data-calc="1">0</p>
+                                    <p class="achievements__text">Team Members</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 _opacity">
+                                <div class="achievements__inner">
+                                    <p class="achievements__number numbers" data-max="5225" data-speed="1" data-calc="10">2005</p>
+                                    <p class="achievements__text">Line of codes</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 _opacity">
+                                <div class="achievements__inner">
+                                    <p class="achievements__number numbers" data-max="4977" data-speed="1" data-calc="10">2007</p>
+                                    <p class="achievements__text">Satisfied Clients</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 _opacity">
+                                <div class="achievements__inner">
+                                    <p class="achievements__number numbers" data-max="178" data-speed="15" data-calc="2">0</p>
+                                    <p class="achievements__text">PSD files included</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="team" id="team">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="team__casual-title-box casual-title">
+                                <h2 class="casual-title__main">MEET OUR TEAM</h2>
+                                <div class="casual-title__separator"></div>
+                                <div class="casual-title__subtitle">We Make Beautiful Template</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="team__person">
+                                <div class="team__photo"><img src="./img/person1.png" alt="person"></div>
+                                <div class="team__description">
+                                    <p class="team__name">John Snow</p>
+                                    <p class="team__career">CEO/CO-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="team__person">
+                                <div class="team__photo"><img src="./img/person2.png" alt="person"></div>
+                                <div class="team__description">
+                                    <p class="team__name">Tyrion Lannister</p>
+                                    <p class="team__career">Art Director/CO-Founder</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="team__person">
+                                <div class="team__photo"><img src="./img/person3.png" alt="person"></div>
+                                <div class="team__description">
+                                    <p class="team__name">Sansa Stark</p>
+                                    <p class="team__career">Product Manager/Co-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="team__join join">
+                                <div class="join__box-text">
+                                    <h3 class="join__title">Are your crazy man?</h3>
+                                    <p class="join__text">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" </p>
+                                </div>
+                                <div class="join__box-button">
+                                   <a href="#contact-form" class="join__button">join with us</a> 
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class="reviews__parallax parallax" data-speed="3" data-view="0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <div class="reviews__casual-title-box casual-title">
+                                    <h2 class="casual-title__main">WHAT CLIENT SAY ?</h2>
+                                    <div class="casual-title__separator"></div>
+                                    <div class="casual-title__subtitle">Our Happy Clients</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <div class="reviews__slider swiper">
+                                    <div class="reviews__wrapper swiper-wrapper">
+                                        <div class="reviews__slide slide1 swiper-slide" data-number='#slide1'>
+                                            <div class="reviews__content">
+                                                <img src="./img/photo-review1.png" alt="photo" class="reviews__img">
+                                            </div>
+                                        </div>
+                                        <div class="reviews__slide slide2 swiper-slide" data-number='#slide2'>
+                                            <div class="reviews__content">
+                                                <img src="./img/photo-review1.png" alt="photo" class="reviews__img">
+                                            </div>
+                                        </div>
+                                        <div class="reviews__slide slide3 swiper-slide" data-number='#slide3'>
+                                            <div class="reviews__content">
+                                                <img src="./img/photo-review1.png" alt="photo" class="reviews__img">
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <div class="reviews__comments">
+                                    <div id='slide1' class="reviews__block-hidden slide1">
+                                        <p class="reviews__text hidden">“There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.”</p>
+                                        <div class="reviews__separator"></div>
+                                        <p class="reviews__name hidden">WHITE SHADOW WALKER</p>
+                                        <p class="reviews__profession hidden">CEO/FOUNDER DELL</p>
+                                    </div>
+                                    <div id='slide2' class="reviews__block-hidden slide2">
+                                        <p class="reviews__text hidden">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam quae corporis sequi ullam impedit earum odio sint odit asperiores ut unde eveniet molestiae, explicabo fugit, sed alias! Repudiandae, reiciendis!"</p>
+                                        <div class="reviews__separator"></div>
+                                        <p class="reviews__name hidden">WALKER WHITE SHADOW</p>
+                                        <p class="reviews__profession hidden">CEO/FOUNDER DELL</p>
+                                    </div>
+                                    <div id='slide3' class="reviews__block-hidden slide3">
+                                        <p class="reviews__text hidden">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic exercitationem fugit asperiores suscipit eos voluptate numquam tempore consequuntur enim repudiandae qui recusandae doloribus voluptates assumenda excepturi amet ea, totam facere.”</p>
+                                        <div class="reviews__separator"></div>
+                                        <p class="reviews__name hidden">SHADOW WHITE WALKER</p>
+                                        <p class="reviews__profession hidden">CEO/FOUNDER DELL</p>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quote">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="quote__inner">
+                                <div class="quote__box-text">
+                                    <p class="quote__text">Looking for a <span>quality and affordable</span> for your next project?</p>
+                                </div>
+                                <div class="quote__box-button">
+                                   <a href="#contact-form" class="quote__button">GET A QUOTE</a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="blog" id="blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="blog__casual-title-box casual-title">
+                                <h2 class="casual-title__main">Latest blog</h2>
+                                <div class="casual-title__separator"></div>
+                                <div class="casual-title__subtitle">Tell Your Story</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__box-items">
+                    <div class="blog__item direct">
+                        <div class="blog__photo">
+                            <img src="./img/blog1.png" alt="blog">
+                        </div>
+                        <div class="blog__content">
+                            <div class="blog__content-inner">
+                                <p class="blog__type">Brading design</p>
+                                <p class="blog__title-item">Leeds Juicery</p>
+                                <p class="blog__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore </p>
+                                <a href="#" class="blog__more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item direct">
+                        <div class="blog__photo">
+                            <img src="./img/blog2.png" alt="blog">
+                        </div>
+                        <div class="blog__content">
+                            <div class="blog__content-inner">
+                                <p class="blog__type">Motion Graphic</p>
+                                <p class="blog__title-item">Hello Itaewon Project</p>
+                                <p class="blog__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore </p>
+                                <a href="#" class="blog__more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item reverse">
+                        <div class="blog__photo">
+                            <img src="./img/blog3.png" alt="blog">
+                        </div>
+                        <div class="blog__content">
+                            <div class="blog__content-inner">
+                                <p class="blog__type">Lookbook seasonal</p>
+                                <p class="blog__title-item">Brooklyn</p>
+                                <p class="blog__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore </p>
+                                <a href="#" class="blog__more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item reverse">
+                        <div class="blog__photo">
+                            <img src="./img/blog4.png" alt="blog">
+                        </div>
+                        <div class="blog__content">
+                            <div class="blog__content-inner">
+                                <p class="blog__type">Photography</p>
+                                <p class="blog__title-item">Maxi Dress</p>
+                                <p class="blog__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore </p>
+                                <a href="#" class="blog__more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>    
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </section>
+
+            <section class="pricing" id="pricing">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="pricing__casual-title-box casual-title">
+                                <h2 class="casual-title__main">PRICING & PLANS</h2>
+                                <div class="casual-title__separator"></div>
+                                <div class="casual-title__subtitle">Get Your Plans for Work</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <h3 class="pricing__main-title">REGISTER NOW <span>Or</span> TRY IF FREE FOR 30 DAYS</h3>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                            <div class="pricing__item">
+                                <p class="pricing__plan">Basic Plan</p>
+                                <ul class="pricing__list">
+                                    <li class="pricing__list-item">15 Email Account</li>
+                                    <li class="pricing__list-item checked">100Gb Space <i class="fas fa-check"></i></li>
+                                    <li class="pricing__list-item">1 Domain Name</li>
+                                    <li class="pricing__list-item checked">500Gb Bandwidth <i class="fas fa-check"></i></li>
+                                    <li class="pricing__list-item">25 MySQL Databases</li>
+                                    <li class="pricing__list-item">Enhanced Sercurity</li>
+                                </ul>
+                                <p class="pricing__price"><sup><span>$</span></sup>185 <span>monthly</span></p>
+                                <a href="#contact-form" class="pricing__button">Get plan</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                            <div class="pricing__item">
+                                <p class="pricing__plan">Business Plan</p>
+                                <ul class="pricing__list">
+                                    <li class="pricing__list-item">15 Email Account</li>
+                                    <li class="pricing__list-item checked">100Gb Space <i class="fas fa-check"></i></li>
+                                    <li class="pricing__list-item">1 Domain Name</li>
+                                    <li class="pricing__list-item checked">500Gb Bandwidth <i class="fas fa-check"></i></li>
+                                    <li class="pricing__list-item">25 MySQL Databases</li>
+                                    <li class="pricing__list-item">Enhanced Sercurity</li>
+                                </ul>
+                                <p class="pricing__price"><sup><span>$</span></sup>235 <span>monthly</span></p>
+                                <a href="#contact-form" class="pricing__button">Get plan</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                            <div class="pricing__item">
+                                <p class="pricing__plan">Premium Plan</p>
+                                <ul class="pricing__list">
+                                    <li class="pricing__list-item">15 Email Account</li>
+                                    <li class="pricing__list-item checked">100Gb Space <i class="fas fa-check"></i></li>
+                                    <li class="pricing__list-item">1 Domain Name</li>
+                                    <li class="pricing__list-item checked">500Gb Bandwidth <i class="fas fa-check"></i></li>
+                                    <li class="pricing__list-item">25 MySQL Databases</li>
+                                    <li class="pricing__list-item">Enhanced Sercurity</li>
+                                </ul>
+                                <p class="pricing__price"><sup><span>$</span></sup>185 <span>monthly</span></p>
+                                <a href="#contact-form" class="pricing__button">Get plan</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                            <div class="pricing__item">
+                                <p class="pricing__plan">Ultimate Plan</p>
+                                <ul class="pricing__list">
+                                    <li class="pricing__list-item">15 Email Account</li>
+                                    <li class="pricing__list-item checked">100Gb Space <i class="fas fa-check"></i></li>
+                                    <li class="pricing__list-item">1 Domain Name</li>
+                                    <li class="pricing__list-item checked">500Gb Bandwidth <i class="fas fa-check"></i></li>
+                                    <li class="pricing__list-item">25 MySQL Databases</li>
+                                    <li class="pricing__list-item">Enhanced Sercurity</li>
+                                </ul>
+                                <p class="pricing__price"><sup><span>$</span></sup>235 <span>monthly</span></p>
+                                <a href="#contact-form" class="pricing__button">Get plan</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="second pricing__casual-title-box casual-title">
+                                <h2 class="casual-title__main">GET IN TOUCH</h2>
+                                <div class="casual-title__separator"></div>
+                                <div class="casual-title__subtitle">Support Fast & Pro 24/7</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="contact__item">
+                                <div class="contact__icon"><i class="fas fa-mobile-alt"></i></div>
+                                <div class="contact__text">
+                                    <p>+61 3 8376 6284</p>
+                                    <p>+61 4 5873 2984</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="contact__item">
+                                <div class="contact__icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="contact__text">
+                                    <p>PO Box 21177</p> 
+                                    <p>Victoria 8011 Australia</p>
+                                    <p>Litte Lonsdale St, Melbourne</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="contact__item">
+                                <div class="contact__icon"><i class="far fa-envelope"></i></div>
+                                <div class="contact__text">
+                                    <p>support@yourcompany.com</p> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="contact__form form" id="contact-form">
+                                <form action="#" id="form" class="form__body">
+                                    <div class="form__inputs-box">
+                                        <div class="form__item">
+                                            <input type="text" id="name" name="name" class="form__input _required" placeholder="Name">
+                                        </div>
+                                        <div class="form__item">
+                                            <input type="email" id="email" name="email" class="form__input _email _required" placeholder="Email">
+                                        </div>
+                                        <div class="form__item">
+                                            <input type="text" id="subject" name="subject" class="form__input _required" placeholder="Subject">
+                                        </div>
+                                    </div>
+                                    <div class="form__message">
+                                        <textarea name="message" id="message" class="form__textarea" placeholder="Content"></textarea>
+                                    </div>
+                                    <div class="form__button-box">
+                                        <button type="submit" class="form__button">Send me</button>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="button-up"><i class="fa fa-chevron-up"></i></div>
+
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer__about">
+                            <p class="footer__title-about">Creative Agency from SARAJEVO - BIH</p>
+                            <p class="footer__text-about">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
+                        <div class="footer__item">
+                            <div class="footer__title">Links</div>
+                            <ul class="footer__list">
+                                <li class="footer__list-item"><a href="#" class="footer__link">Link</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__link">Link</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__link">Link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                        <div class="footer__item">
+                            <div class="footer__title">Twitter widget</div>
+                            <!-- <a class="twitter-timeline" data-height="600" data-theme="dark" href="https://twitter.com/TwitterDev/lists/national-parks?ref_src=twsrc%5Etfw">A Twitter List by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/main.js"></script>
+    
+</body>
+</html>

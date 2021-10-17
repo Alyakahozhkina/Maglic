@@ -1,0 +1,145 @@
+// main: main.less
+
+.pricing {
+    padding: 109px 0 0;
+
+    .casual-title {
+
+        // .casual-title__main
+    
+        &__main {
+            color: @blackColor;
+            letter-spacing: 3px;
+            margin: 0 0 20px;
+        }
+        &.second {
+            padding: 88px 0 76px;
+        }
+    }
+
+    // .pricing__main-title
+
+    &__main-title {
+        font-family: 'montserratsemibold';
+        .adaptiv-font(18, 16);
+        text-align: center;
+        color: @blackColor;
+        text-transform: uppercase;
+        margin: 73px 0 76px;
+        letter-spacing: 1.5px;
+
+        span {
+            font-family: 'open_sanslight_italic';
+            font-size: 14px;
+            color: @greyColor;
+            text-transform: capitalize;
+        }
+    }
+
+    // .pricing__item
+
+    &__item {
+        max-width: 269px;
+        width: 100%;
+        border: 1px solid #ececec;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        transition: all 0.6s ease;
+        &:hover {
+            transform: translateY(-20px);
+            box-shadow: 0 0 35px #ececec;
+            .pricing__button {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(-50%, 20px);
+            }
+        }
+    }
+
+    // .pricing__plan
+
+    &__plan {
+        font-family: 'montserratbold';
+        font-size: 14px;
+        border-bottom: 1px solid #ececec;
+        color: #303438;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 23px 0 19px;
+        margin: 0;
+    }
+
+    // .pricing__list
+
+    .pricing {
+        &__list {
+            margin: 20px 0 36px;
+        }
+    }
+
+    // .pricing__list-item
+
+    &__list-item {
+        font-family: 'open_sansregular';
+        font-size: 12px;
+        color: @greyColor;
+        padding: 15px 0;
+        letter-spacing: 1.8px;
+        i {
+            color: #f6b138;
+        }
+    }
+
+    // .pricing__price
+
+    &__price {
+        font-family: 'montserratregular';
+        .adaptiv-font(50, 42);
+        color: @blackColor;
+        letter-spacing: -1px;
+        margin: 0 0 60px 5px;
+        sup {
+            font-size: 54px;
+            margin-right: 13px;
+            > span {
+               font-size: 18px; 
+            }
+        }
+        > span {
+            font-family: 'open_sanslight_italic';
+            font-size: 14px;
+            margin: 0px 0 0 -8px;
+            letter-spacing: 1.3px;
+        }
+    }
+
+    // .pricing__button
+
+    &__button {
+        display: block;
+        font-family: 'montserratbold';
+        font-size: 12px;
+        max-width: 160px;
+        width: 100%;
+        padding: 10px;
+
+        border: 1px solid black;
+        background: #f6f6f6;
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.6s ease;
+        &:hover {
+            color: @yellowColor;
+            border: 1px solid @yellowColor;
+        }
+    }
+}
