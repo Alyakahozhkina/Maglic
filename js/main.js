@@ -73,9 +73,17 @@
             let height = parallaxBlock.offsetHeight;
             let speed = parallaxBlock.dataset.speed;
             let view = parallaxBlock.dataset.view;
-            if(window.innerWidth <= 992) {
-                speed -= 1;
+            if(window.innerWidth <= 1280) {
                 view = 0;
+            }
+            if(window.innerWidth <= 1024) {
+                speed -= 1;
+                if(speed >= 2) {
+                    speed = 0;
+                }
+            }
+            if(window.innerWidth <= 992) {
+                speed = 0;
             }
             let visible = isInViewport(parallaxBlock);
             
@@ -238,10 +246,10 @@
         initialSlide: 0,
         loop: true,
         centeredSlides: true,
-        // autoplay: {
-        //     delay: 2000,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
         speed: 2000,
         slideToClickedSlide: true,
         //Адаптивность
