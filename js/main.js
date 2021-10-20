@@ -1,6 +1,5 @@
 "use strict"
 
-// document.addEventListener('load', function () {
 
     // HEADER-SCROLLED
     const header = document.querySelector('.header');
@@ -218,7 +217,7 @@
         loop: true,
         loopedSlides: 2,
         autoplay: {
-            delay: 2000,
+            delay: 5000,
             disableOnInteraction: false,
         },
         speed: 2000,
@@ -247,7 +246,7 @@
         loop: true,
         centeredSlides: true,
         autoplay: {
-            delay: 2000,
+            delay: 3000,
             disableOnInteraction: false,
         },
         speed: 2000,
@@ -307,7 +306,6 @@
     addComment();
 
 
-// });
 
 
 
@@ -335,14 +333,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 form.reset();
                 form.classList.remove('_sending');
             } else {
-                alert('Ошибка');
                 form.classList.remove('_sending');
             }
 
 
 
         } else {
-            alert('Required fields');
+
         }
     }
 
@@ -390,71 +387,85 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+//PREVENTDEFAULT
+const blog = document.querySelector('.blog');
+const footer = document.querySelector('.footer');
+
+blog.addEventListener('click', function(e) {
+    e.preventDefault();
+});
+
+footer.addEventListener('click', function(e) {
+    if(e.target.closest('.link-default')) {
+        e.preventDefault();
+    }
+});
+//PREVENTDEFAULT
 
 
 
 
 
+Fancybox.bind("[data-fancybox]", {
+    hideScrollbar: false,
+    on: {
+      init: () => {
+        console.log('открыто');
+        bodyLock();
+      },
+      destroy: () => {
+        console.log('закрыто');
+        bodyUnlock();
+      },
+    },
+  });
 
+  const lockPadding = document.querySelectorAll('.lock-padding');
+  let unlock = true;
+  const timeout = 500;
 
+  function bodyLock () {
+	const lockPaddingValue = window.innerWidth - document.querySelector('.for__page').offsetWidth + 'px';
 
+	if(lockPadding.length > 0) {
+		for(let index = 0; index < lockPadding.length; index++) {
+			const elem = lockPadding[index];
+            if(elem.classList.contains('button-up')) {
+                elem.style.marginRight = lockPaddingValue;
+            } else {
+                elem.style.paddingRight = lockPaddingValue;
+            }
+			
+		}
+	}
+	body.style.paddingRight = lockPaddingValue;
+	body.classList.add('lock');
 
+	unlock = false;
+	setTimeout(function () {
+		unlock = true;
+	}, timeout);
+}
 
+function bodyUnlock () {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// numbers.forEach(number => {
-
-//     let numberTop = number.getBoundingClientRect().top,
-//         start = +number.innerHTML, end = +number.dataset.max;
-
-//     window.addEventListener('scroll', onScroll);
-//     window.addEventListener('resize', onScroll);
-
-//     function onScroll() {
-//         if(window.pageYOffset > (numberTop - window.innerHeight / 1.4)) {
-
-//             console.log(window.pageYOffset);
-//             console.log(window.innerHeight);
-//             console.log(numberTop);
-//             this.removeEventListener('scroll', onScroll);	
-//             this.removeEventListener('resize', onScroll);
-//             number.closest('.achievements__inner').style.opacity = '1';
-
-//             let interval = setInterval(function() {
-//                 start += +number.dataset.calc;
-//                     number.innerHTML = start;
-//                 if(start == end) {
-//                     clearInterval(interval);
-//                 }
-//             }, +number.dataset.speed);
-//     }
-//     }
-// });
-
+	setTimeout(function () {
+		if(lockPadding.length > 0) {
+			for(let index = 0; index < lockPadding.length; index++) {
+				const elem = lockPadding[index];
+                if(elem.classList.contains('button-up')) {
+                    elem.style.marginRight = '0px';
+                } else {
+                    elem.style.paddingRight = '0px';
+                }
+			}
+		}
+		body.style.paddingRight = '0px';
+		body.classList.remove('lock');
+	}, timeout);
+		
+	unlock = false;
+	setTimeout(function () {
+		unlock = true;
+	}, timeout);
+}
