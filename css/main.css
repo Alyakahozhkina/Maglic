@@ -1869,9 +1869,18 @@ svg {
 }
 
 .form__input._error {
+  -webkit-transition: -webkit-box-shadow 0.4s ease;
+  transition: -webkit-box-shadow 0.4s ease;
+  -o-transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.4s ease, -webkit-box-shadow 0.4s ease;
   border: 1px solid red;
   -webkit-box-shadow: 0 0 10px red;
           box-shadow: 0 0 10px red;
+}
+
+.form__input._error:focus {
+  border-bottom: 1px solid red;
 }
 
 .form__input,
@@ -1885,9 +1894,17 @@ svg {
   text-transform: uppercase;
   letter-spacing: 1.2px;
   outline: none;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  -webkit-transition: border-bottom 0.4s ease;
+  -o-transition: border-bottom 0.4s ease;
+  transition: border-bottom 0.4s ease;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  border-bottom: 1px solid #f6b138;
 }
 
 .form__textarea {
