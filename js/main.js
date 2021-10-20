@@ -410,11 +410,9 @@ Fancybox.bind("[data-fancybox]", {
     hideScrollbar: false,
     on: {
       init: () => {
-        console.log('открыто');
         bodyLock();
       },
       destroy: () => {
-        console.log('закрыто');
         bodyUnlock();
       },
     },
